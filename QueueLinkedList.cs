@@ -50,5 +50,15 @@ namespace QueueLinkedList
                 temp = temp.next;
             }
         }
+        //This method for delete element
+        internal void Dequeue()
+        {
+            //if condition for checking this.front is null or not
+            if (this.front == null)
+                Console.WriteLine("Deletation is not possible");
+            //To show deleted element
+            Console.WriteLine("\nDeleted node : " + this.front.data);
+            this.front = this.front.next;
+        }
     }
 }
