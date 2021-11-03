@@ -9,7 +9,10 @@ namespace Stack72
     class Program
     {
         static void Main(string[] args)
-        {//creating object stack class
+        {
+
+
+            //creating object stack class
             StackLinkedList list = new StackLinkedList();
             //calling push method
             list.Push(70);
@@ -17,8 +20,12 @@ namespace Stack72
             list.Push(56);
             //calling display method
             list.Display();
-            Console.ReadLine();
+            //calling IsEmpty method
+            list.IsEmpty();
+            list.Display();
 
+            Console.ReadLine();
         }
-    }
+    }   
 }
+

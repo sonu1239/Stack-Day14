@@ -46,5 +46,31 @@ namespace Stack72
                 temp = temp.next;
             }
         }
+        //
+        internal void Peek()
+        {
+            if (this.top == null)
+                Console.WriteLine("The stack is empty");
+            Console.WriteLine("\n{0} is in the top of stack", this.top.data);
+        }
+        //This method for deleting  the first node of stack
+        internal void Pop()
+        {
+            if (this.top == null)
+                Console.WriteLine("Deletion not possible");
+            //To show deleted element
+            Console.WriteLine("Deleted node from stack : " + this.top.data);
+            this.top = this.top.next;
+        }
+        //This method for deleting each element 
+        internal void IsEmpty()
+        {
+            //while loop repeatedly runs until last elenment is not deleted 
+            while (this.top != null)
+            {
+                Peek();
+                Pop();
+            }
+        }
     }
 }
